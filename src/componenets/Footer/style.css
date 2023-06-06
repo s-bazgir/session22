@@ -21,12 +21,15 @@ a{
     flex-direction: row;
     justify-content: space-between;
     color: #fff;
+    gap:20px;
+    margin-right: 40px;
 }
 .footerMenu{    
     background: #000;
     height:40px;
     padding: 5px 0;
     color: #fff;
+    width:100%;
 } 
 .bottomMenu a{
     color: #fff;
@@ -37,5 +40,9 @@ a{
 .container{
     width: 1400px;
     margin: 0 auto;
+}
+.socailMenu{
+    color:#fff;
+    background: #000;
 }
 

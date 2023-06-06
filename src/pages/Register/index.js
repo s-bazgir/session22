@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "../../componenets/Header";
 import Footer from "../../componenets/Footer";
 import  "./style.css";
-import axios from "axios";
+import axios from "axios"; 
 
 export default function Register(){
 

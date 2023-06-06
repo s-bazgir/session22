@@ -1,1 +1,73 @@
 
+.filterPart{
+    background: #7F7F7F;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    align-items: center;
+}
+#filmName{
+    border: none;
+    width:500px;
+}
+.footerMenu{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.searchResult{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.serachWrapper{
+    width:700px;
+    height:300px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+.serachWrapper img{
+    height:300px;
+    width:auto;
+    border-radius: 5px;
+}
+.filmSearchWrapper{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    color: #fff;
+}
+.year-rate{
+    position: absolute;
+    top:5px;
+    right:-300px;
+    color:  #FFC90E;
+}
+.title-year{
+    position: relative;
+}
+.bottom{
+    position: absolute;
+    bottom: 20px;
+    width:400px;
+}
+.playButton{
+    border:1px solid #fff;
+    width:25px;
+    height:25px;
+    border-radius: 12.5px;
+    position: relative;
+}
+.faPlay{
+    position: absolute;
+    top:5px;
+}
+.playPart{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+}

@@ -1,0 +1,35 @@
+.holder{
+    width:1200px;
+    height:300px;
+    border-radius: 10px;
+    margin: 15px auto;
+    background: #303030;
+    position: relative;
+}
+.about{
+    position: absolute;
+    top:15px;
+    left:15px;
+}
+.downloadPart{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap:20px;
+}
+.downloadPart{
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+}
+.downloadPart div img{
+    width:30px;
+    height:30px;
+}
+.downloadPart div{
+    display: flex;
+    flex-direction: row;
+    padding:5px;
+    border-radius: 10px;
+    background-color: #37383E;
+}

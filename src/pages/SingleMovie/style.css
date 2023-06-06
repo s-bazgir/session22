@@ -1,0 +1,30 @@
+.holder{
+    width:1500px;
+    margin: 0 auto;
+    background: #7F7F7F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.posterHolder{
+    width:1400px;
+    height:500px;
+    margin: 0 auto;
+}
+.posterHolder img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+h1,h3{
+    margin: 0;
+}
+.holder{
+    color: #fff;
+}
+.watch{
+    color: #FFC90E;
+}

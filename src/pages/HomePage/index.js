@@ -4,6 +4,7 @@ import Header from "../../componenets/Header";
 import GenresFilm from "../../componenets/GenresFilm";
 import Slider from "../../componenets/Slider";
 import Footer from "../../componenets/Footer";
+import AppDownload from "../../componenets/AppDownload";
 
 export default function HomePage(){
     return (
@@ -13,6 +14,7 @@ export default function HomePage(){
         <main>
           <GenresFilm />
         </main>
+        <AppDownload />
         <Footer />
       </Fragment>
     )

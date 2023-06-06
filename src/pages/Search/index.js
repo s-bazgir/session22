@@ -4,6 +4,7 @@ import Header from "../../componenets/Header";
 import Footer from "../../componenets/Footer";
 import  "./style.css";
 import axios from "axios";
+import { FaPlay} from "react-icons/fa";
 
 export default function Search(){
     
@@ -17,17 +18,28 @@ export default function Search(){
     }
     function renderFarm() {
         return result.map(function(movie) {
-            const {id, poster, title, year} = movie;
+            const {id, poster, title, year, plot, country, genres, imdb_rating, writer, actors} = movie;
             return (
-                <li key={id}>
-                    <Link to={`/SingleMovie/${id}`}>
-                        <img src={poster} />
-                        <div class="title-year">
-                            <p>{title}</p>
-                            <p class="year">{year}</p>
+                    <li key={id}>
+                        <div className="serachWrapper">
+                            <Link to={`/SingleMovie/${id}`} className="filmSearchWrapper">
+                                <img src={poster} />
+                                <div className="title-year">
+                                    <div className="year-rate">{year} - {imdb_rating}</div>
+                                    <div className="bottom">
+                                        <h3>{title}</h3>
+                                        <div>{country} - {year}</div>
+                                        <div class="playPart">
+                                            <div className="playButton">
+                                                <FaPlay className="faPlay" /> 
+                                            </div>
+                                            <div>WATCH</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
-                    </Link>
-                </li>
+                    </li>
             )
         })
     }
@@ -39,8 +51,8 @@ export default function Search(){
                 <p>Film Name</p>
                 <input id="filmName" type="text" onChange={serachByName}></input>                
              </div>
-             <div className="SearchResult">
-                <ul>
+             <div>
+                <ul className="searchResult">
                  {renderFarm()}
                 </ul>
              </div>

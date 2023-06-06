@@ -18,8 +18,7 @@ export default function Enter(){
              password: password
             });   
             console.log(response);        
-        }catch(e){
-           
+        }catch(e){           
         }
     }
 
@@ -29,16 +28,15 @@ export default function Enter(){
               <div className="enter-div">
                 <h1>Sign In</h1>
                 <div className="fieldGroup">
-                    <p>User Name: </p>
+                    <div>User Name: </div>
                     <input id="userName"></input>
                 </div>
                 <div className="fieldGroup">
-                    <p>Password: </p>
+                    <div>Password: </div>
                     <input id="Password"></input>
-                </div>
-                <br></br>
-                <button id="enter-btn" onClick={signIn}>Sign In</button>
-                <br/>
+                </div>         
+                <div class="line"></div>       
+                <button id="enter-btn" onClick={signIn}>Sign In</button>                
                 <Link to="/Register">
                     <button id="register-btn" >Register</button>
                 </Link>
