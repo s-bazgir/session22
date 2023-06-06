@@ -1,0 +1,10 @@
+.genreGroup{
+    text-decoration: none;    
+    color:#fff;
+    text-align: center;
+    font-size: 20px;
+}
+.genreGroup:hover{
+    color: #FFC90E;
+}
+

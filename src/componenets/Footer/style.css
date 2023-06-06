@@ -1,0 +1,41 @@
+ul,li,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.bottomMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px;
+}
+.optionMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    gap:20px;
+}
+.socailMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+}
+.footerMenu{    
+    background: #000;
+    height:40px;
+    padding: 5px 0;
+    color: #fff;
+} 
+.bottomMenu a{
+    color: #fff;
+}
+.bottomMenu a:hover{
+    color: #FFC90E;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,24 @@
+body{
+    background: #000;
+}
+.notFound{
+    color: #fff;
+    width:500px;
+    margin: 200px auto;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    background: #99D9EA;
+    color: #fff;
+    margin: 50px 50px;
+    width:300px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,30 @@
+html {
+    font-size: 14px;
+  }
+  body {
+    margin: 0;
+    direction: rtl;
+    background: #000;
+  }
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .container{
+    width:500px;
+    margin:100px auto;
+    color:#fff;
+  }

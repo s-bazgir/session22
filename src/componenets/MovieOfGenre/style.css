@@ -1,0 +1,28 @@
+.filmList{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.filmList li{
+    padding: 10px 10px;
+}
+.filmList li img{
+    border-radius: 10px;
+    height:250px;
+    width: auto;
+}
+.singleMovie{
+    color: #fff;
+}
+.singleMovie:hover{
+    color: #FFC90E;
+}
+.singleMovie h4{
+    width:170px;
+    text-align: center;
+}
+
+
+
+

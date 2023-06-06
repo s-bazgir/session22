@@ -1,0 +1,50 @@
+ul,li,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.topMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.filmMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.accountMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headerMenu{    
+    background: #000;
+    height:50px;
+    padding: 5px 0;
+    color: #fff;
+}
+.topMenu a{
+    color: #fff;
+}
+.container{
+    width: 1500px;
+    margin: 0 auto;
+}
+.signIn{
+    border: solid #fff 1px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.signIn:hover{
+    color:#000;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.filmMenu a:hover{
+    color: #FFC90E;
+}
+
