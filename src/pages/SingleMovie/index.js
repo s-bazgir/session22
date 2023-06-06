@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import  "./style.css";
 import Header from "../../componenets/Header";
 import Footer from "../../componenets/Footer";
+import AppDownload from "../../componenets/AppDownload";
 
 
 export default function SingleMovie(){
@@ -28,25 +29,27 @@ export default function SingleMovie(){
                 
         return   (
             <Fragment>
-                <div className="holder">
+                <div className="holder overflow">                    
                     <div class="posterHolder">
                         <img src={poster}></img>
                     </div>
-                    <h1>{movie.title}</h1>
-                    <h3>{country} - {year}</h3>
-                    <h3>{imdb_rating} - {imdb_votes}</h3>
-                    <div className="watch">WATCH</div>
-                </div>
-                
+                    <div className="filmDesc">
+                        <h1>{movie.title}</h1>
+                        <h3>{country} - {year}</h3>
+                        <h3>{imdb_rating} - {imdb_votes}</h3>
+                        <div className="watch">WATCH</div>
+                    </div>
+                </div>                
             </Fragment>
         )
         } 
                                                         
     return(
         <Fragment>  
-            <Header></Header>          
+            <Header />       
                {renderPage()} 
-            <Footer></Footer>   
+            {/* <AppDownload />    */}
+            <Footer />   
         </Fragment>
     )
 }

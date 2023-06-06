@@ -1,0 +1,10 @@
+.filmList{
+    display: flex;
+    flex-direction: row;    
+}
+.filmDetail{
+    color:#fff;
+}
+.filmDetail:hover{
+    color:#FFC90E;
+}

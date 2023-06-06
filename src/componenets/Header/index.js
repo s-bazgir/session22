@@ -12,7 +12,7 @@ export default function Header(){
                 <li>
                     <ul className="filmMenu">
                       <li>
-                        <img src="../../public/assets/images/icon.png" />
+                        <img src="/assets/images/icon1.png" />
                       </li>
                       <li>
                         <Link to="/">Home</Link>

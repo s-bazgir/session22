@@ -2,6 +2,9 @@ import axios from "axios";
 import { Fragment, useState, useEffect } from "react";
 import { useParams , Link } from "react-router-dom";
 import  "./style.css";
+import Header from "../../componenets/Header";
+import Footer from "../../componenets/Footer";
+
 
 export default function SingleGenre(){
 
@@ -26,10 +29,10 @@ export default function SingleGenre(){
                  return movies.map(function(film){
                             const {id , poster , title} = film;
                             return(
-                                    <li key={id}>
+                                    <li key={id} >
                                         <Link to={`/SingleMovie/${id}`} >
                                             <img src={poster} />
-                                            <h4>{title}</h4>
+                                            <h4 className="filmDetail">{title}</h4>
                                         </Link>    
                                     </li>
                                    )
@@ -38,8 +41,12 @@ export default function SingleGenre(){
         } 
                                                         
     return(
-        <Fragment>            
-               {renderPage()} 
+        <Fragment> 
+            <Header />  
+                <ul className="filmList">         
+                    {renderPage()} 
+                </ul> 
+            <Footer />  
         </Fragment>
     )
 }

@@ -47,4 +47,8 @@ a{
 .filmMenu a:hover{
     color: #FFC90E;
 }
+.filmMenu img{
+    width:80px;
+    height:30px;
+}
 
